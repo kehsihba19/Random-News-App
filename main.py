@@ -17,4 +17,6 @@ def home():
 	news['tag']=tag[main_list_selection]
 	return render_template('index.html',news=news)
 
-app.run(debug=True)
+if __name__ == "__main__":
+    #app.debug = True
+    app.run()
